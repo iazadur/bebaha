@@ -52,12 +52,12 @@ const Nav = () => {
                 <div className="grid grid-cols-7 gap-4 py-1">
                     <div className="col-span-2"></div>
                     <div className="col-span-5 flex gap-2">
-                        <p className='rounded-lg bg-gray-300 py-1 px-2'>New Match (445)</p>
-                        <p className="rounded-lg bg-gray-300 py-1 px-2">All (978)</p>
+                        <p className='rounded-2xl hover:bg-pink-700 border border-pink-800 hover:text-white font-medium px-2'>New Match (445)</p>
+                        <p className="rounded-2xl hover:bg-pink-700 border border-pink-800 hover:text-white font-medium px-2">All (978)</p>
 
-                        <p className="rounded-lg bg-gray-300 py-1 px-2">My Match (190</p>
+                        <p className="rounded-2xl hover:bg-pink-700 border border-pink-800 hover:text-white font-medium px-2">My Match (190</p>
 
-                        <p className="rounded-lg bg-gray-300 py-1 px-2">Near Me (458)</p>
+                        <p className="rounded-2xl hover:bg-pink-700 border border-pink-800 hover:text-white font-medium px-2">Near Me (458)</p>
                     </div>
                 </div>
             </div>
