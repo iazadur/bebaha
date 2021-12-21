@@ -5,6 +5,8 @@ import { GrFormDown } from 'react-icons/gr'
 const Asidebar = () => {
     const [sort, setSort] = useState(true)
     const [cat, setCat] = useState(true)
+    const [location, setLocation] = useState(true)
+    const [more, setMore] = useState(false)
     return (
         <>
             <div className="flex flex-col pt-12 text-red-400  font-bold">
@@ -29,28 +31,57 @@ const Asidebar = () => {
                 <span className="font-semibold">All Categories</span> <span><GrFormDown /></span>
             </div>
 
-            {cat &&  <div className="">
+            {cat && <div className="py-1">
                 <ul>
-                    <li>Electronics</li>
-                    <li>Mobiles</li>
-                    <li>Home and Living
+                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Electronics</li>
+                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Mobiles</li>
+                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Home and Living
                         <ul className='pl-8 list-disc'>
-                            <li>Vehicles</li>
-                            <li>Property</li>
-                            <li>Pets & Animals</li>
-                            <li>Fashion & Beauty</li>
-                            <li>Hobbies, Sports & Kids</li>
+                            <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Vehicles</li>
+                            <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Property</li>
+                            <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Pets & Animals</li>
+                            <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Fashion & Beauty</li>
+                            <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Hobbies, Sports & Kids</li>
                         </ul>
                     </li>
-                    <li>Education</li>
-                    <li>Essentials</li>
-                    <li>Business & Industry</li>
-                    <li>Jobs</li>
-                    <li>Services</li>
-                    <li>Agriculture</li>
-                    <li>Overseas Jobs</li>
+                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Education</li>
+                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Essentials</li>
+                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Business & Industry</li>
+                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Jobs</li>
+                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Services</li>
+                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Agriculture</li>
+                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Overseas Jobs</li>
                 </ul>
             </div>}
+
+            {/* Location  */}
+            <div className="flex justify-between pt-3" onClick={() => setLocation(!location)}>
+                <span className="font-semibold">Location</span> <span><GrFormDown /></span>
+            </div>
+            {location && <div className="py-1 px-2">
+                <ul>
+                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Urgent</li>
+                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Cheap Rate</li>
+                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Home Delivery</li>
+                </ul>
+            </div>}
+            <ul className='flex gap-3 text-gray-400 font-normal flex-wrap text-sm '>
+                <li className=''>Privacy</li>
+                <li>Terms</li>
+                <li>Promote</li>
+                <li onClick={() => setMore(!more)} className='font-medium'>More</li>
+                {more && <>
+                    <li>App</li>
+                    <li>Add to home Screen</li>
+                    <li>Follow Facebook</li>
+                    <li>Youtube</li>
+                    <li>Helpline</li>
+                    <li>HelpChat</li>
+                    <li>Blog</li>
+                    <li>Tips & Tricks</li>
+                    <li>About Us</li>
+                </>}
+            </ul>
         </>
     );
 };
