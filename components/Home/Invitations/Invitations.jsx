@@ -7,7 +7,7 @@ const Invitations = () => {
     return (
         <>
             <div className="flex justify-between items-center py-1 px-2 md:px-0">
-                <div className="my-2"><span className='text-md'>Invitation <Badge count="67" className='' /></span></div>
+                <div className="my-2"><span className='text-md'>Invitation <Badge count="677" className='' /></span></div>
                 <div className="flex gap-x-3">
                     <span className="text-indigo-500">Accept All invitation</span> |
                     <span className="text-indigo-500">View All</span>
