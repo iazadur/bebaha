@@ -1,6 +1,9 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Invitations from '../components/Home/Invitations/Invitations'
+
+
+
+
 
 export default function Home() {
   return (
@@ -11,9 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className=" font-extrabold text-3xl p-80 text-white">
-        <h2>hello</h2>
-      </div>
+     <Invitations />
 
 
     </>
