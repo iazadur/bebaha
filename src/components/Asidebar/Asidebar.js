@@ -17,8 +17,7 @@ const Asidebar = () => {
                 <li><a href=""><span>asdf</span></a></li>
                 <li><a href=""><span>asdf</span></a></li>
                 <li><a href=""><span>asdf</span></a></li>
-                <li><a href=""><span>asf</span></a></li>
-                <li><a href=""><span>asdf</span></a></li>
+
             </ul>
         </>
     );
