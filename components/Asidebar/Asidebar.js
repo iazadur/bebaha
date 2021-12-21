@@ -65,12 +65,14 @@ const Asidebar = () => {
                     <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Home Delivery</li>
                 </ul>
             </div>}
-            <ul className='flex gap-3 text-gray-400 font-normal flex-wrap text-sm '>
+            <ul className='flex gap-5 text-gray-400 font-normal flex-wrap text-sm'>
                 <li className=''>Privacy</li>
                 <li>Terms</li>
                 <li>Promote</li>
                 <li onClick={() => setMore(!more)} className='font-medium'>More</li>
-                {more && <>
+            </ul>
+            {more && <>
+                <ul className='flex gap-x-8 gap-y-1 my-2 text-gray-400 font-normal flex-wrap text-sm'>
                     <li>App</li>
                     <li>Add to home Screen</li>
                     <li>Follow Facebook</li>
@@ -80,8 +82,8 @@ const Asidebar = () => {
                     <li>Blog</li>
                     <li>Tips & Tricks</li>
                     <li>About Us</li>
-                </>}
-            </ul>
+                </ul>
+            </>}
         </>
     );
 };
