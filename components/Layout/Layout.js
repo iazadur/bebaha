@@ -11,8 +11,8 @@ const Layout = ({ children }) => {
             <div style={{backgroundColor:"#F2F3F7"}}>
             <div className="container mx-auto">
                 <div className="grid grid-cols-7 gap-4">
-                    <div className="col-span-2"><Asidebar /></div>
-                    <div className="col-span-5">
+                    <div className="col-span-2 md:block hidden"><Asidebar /></div>
+                    <div className="md:col-span-5 col-span-7">
                         <main>{children}</main>
                     </div>
 

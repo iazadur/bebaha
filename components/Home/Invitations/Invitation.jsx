@@ -11,6 +11,7 @@ const Invitation = () => {
         <>
 
             <Card
+            className='mx-auto'
                 hoverable
                 style={{ width: 320 }}
                 cover={<Image src="/img/azad.jpg" width="320" height="350" alt='' />}
