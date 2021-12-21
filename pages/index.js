@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Invitations from '../components/Home/Invitations/Invitations'
+import Preference from '../components/Home/Preference/Preference'
 
 
 
@@ -14,7 +15,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-     <Invitations />
+      <Invitations />
+      <Preference />
 
 
     </>
