@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
             <Nav />
             <div className="container mx-auto">
                 <div className="grid grid-cols-7 gap-4">
-                    <div className="col-span-2 bg-gray-400"><Asidebar /></div>
+                    <div className="col-span-2"><Asidebar /></div>
                     <div className="col-span-5">
                         <main>{children}</main>
                     </div>
