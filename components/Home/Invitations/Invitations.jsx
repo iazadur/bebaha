@@ -14,7 +14,7 @@ const Invitations = () => {
                 </div>
             </div>
             <div className="grid md:grid-cols-2 gap-2 grid-cols-1">
-                {Array.from({ length: 1 }).map((_, idx) => (<Invitation key={idx} />))}
+                {Array.from({ length: 2 }).map((_, idx) => (<Invitation key={idx} />))}
             </div>
         </>
     );

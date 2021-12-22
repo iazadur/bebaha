@@ -12,19 +12,17 @@ const Nav = () => {
                     </div>
                     <div className="flex gap-x-2 justify-center items-center">
                         <div className=" md:col-span-5 col-span-7 flex-wrap  flex gap-2">
-                            <p className='rounded-2xl hover:bg-pink-700 border border-pink-800 hover:text-white font-medium px-2 cursor-pointer'>New Match (445)</p>
-                            <p className="rounded-2xl hover:bg-pink-700 border border-pink-800 hover:text-white font-medium px-2 cursor-pointer">All (978)</p>
+                            <p className='rounded-2xl hover:bg-pink-700 hover:text-white font-medium px-3 py-1 cursor-pointer'>New Match (445)</p>
+                            <p className="rounded-2xl hover:bg-pink-700 hover:text-white font-medium px-3 py-1 cursor-pointer">All (978)</p>
 
-                            <p className="rounded-2xl hover:bg-pink-700 border border-pink-800 hover:text-white font-medium px-2 cursor-pointer">My Match (190</p>
+                            <p className="rounded-2xl hover:bg-pink-700 hover:text-white font-medium px-3 py-1 cursor-pointer">My Match (190</p>
 
-                            <p className="rounded-2xl hover:bg-pink-700 border border-pink-800 hover:text-white font-medium px-2 cursor-pointer">Near Me (458)</p>
+                            <p className="rounded-2xl hover:bg-pink-700 hover:text-white font-medium px-3 py-1 cursor-pointer">Near Me (458)</p>
                         </div>
 
                     </div>
                     <div className="flex justify-center items-center gap-2">
-                        <div className="">
-                            <MdEmail className='bg-gray-300 rounded-full p-2 text-4xl cursor-pointer' />
-                        </div>
+                        
                         <div className="">
                             <MdEmail className='bg-gray-300 rounded-full p-2 text-4xl cursor-pointer' />
                         </div>

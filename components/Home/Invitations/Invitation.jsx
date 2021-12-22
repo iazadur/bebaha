@@ -13,8 +13,8 @@ const Invitation = () => {
             <Card
             className='mx-auto'
                 hoverable
-                style={{ width: 320 }}
-                cover={<Image src="/img/azad.jpg" width="320" height="350" alt='' />}
+                style={{ width: 250 }}
+                cover={<Image src="/img/azad.jpg" width="250" height="300" alt='' />}
                 actions={[
                     <CloseOutlined key="reject" />,
                     <CheckOutlined key="done" />,
