@@ -8,7 +8,7 @@ const RightSideBar = () => {
                 <Image src="/img/skrill.jpg" alt="" width="275" height={"275"} />
             </div>
             <div className="my-2">
-               <h3 className='text-lg text-gray-500 font-semibold'> Chat or Send Message</h3>
+                <h3 className='text-lg text-gray-500 font-semibold'> Chat or Send Message</h3>
                 <hr />
 
                 <form >
@@ -26,7 +26,7 @@ const RightSideBar = () => {
 
                     {Array.from({ length: 4 }).map((_, idx) => (
                         <div className="flex flex-col gap-x-2 justify-center items-center" key={idx}>
-                            <div className="">
+                            <div className="avatar online">
                                 <Image className='rounded-full' src="/img/azad.jpg" alt="" width="50" height={"50"} />
                             </div>
                             <p>{"iazadur"}</p>
@@ -38,8 +38,8 @@ const RightSideBar = () => {
             <div className="my-4">
 
                 {Array.from({ length: 10 }).map((_, idx) => (
-                    <div className="flex gap-x-6 gap-y-4 justify-center items-center" key={idx}>
-                        <div className="">
+                    <div className="flex gap-x-4 my-3  items-center" key={idx}>
+                        <div className="avatar online">
                             <Image className='rounded-full' src="/img/azad.jpg" alt="" width="50" height={"50"} />
                         </div>
                         <div className="flex flex-col justify-center ">

@@ -18,3 +18,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.avatar.online:before {
+  top: 82%;
+}
