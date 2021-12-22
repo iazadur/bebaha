@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Invitations from '../components/Home/Invitations/Invitations'
 import Preference from '../components/Home/Preference/Preference'
+import Users from '../components/Home/Users/Users'
 
 
 
@@ -17,6 +18,7 @@ export default function Home() {
 
       <Invitations />
       <Preference />
+      <Users />
 
 
     </>

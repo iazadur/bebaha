@@ -12,7 +12,7 @@ const Preference = () => {
 
                 <div className="px-3">
 
-                    {Array.from({ length: 4 }).map((_, idx) => (<SinglePreference key={idx} />))}
+                    {Array.from({ length: 2 }).map((_, idx) => (<SinglePreference key={idx} />))}
                 </div>
             </div>
 
