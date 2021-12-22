@@ -1,11 +1,13 @@
 import Link from 'next/link';
 import React, { useState } from 'react';
 import { GrFormDown } from 'react-icons/gr'
+import { Badge } from 'antd';
 
 const Asidebar = () => {
     const [sort, setSort] = useState(true)
     const [cat, setCat] = useState(true)
     const [location, setLocation] = useState(true)
+    const [inbox, setInbox] = useState(true)
     const [more, setMore] = useState(false)
     return (
         <>
@@ -14,6 +16,26 @@ const Asidebar = () => {
                 <Link href="#">❤️ Premium Product</Link>
                 <Link href='/'>❤️ For You</Link>
             </div>
+
+
+
+            <div className="flex justify-between pt-3" onClick={() => setInbox(!inbox)}>
+                <div className=" indicator">
+                    <Badge count="677" className='indicator-item' />
+                    <p className="capitalize text-xl font-medium pb-1">inbox</p>
+                </div>
+                <span><GrFormDown /></span>
+            </div>
+            {inbox && <ul className='ml-8 list-disc'>
+                <li>Invitation(67)</li>
+                <li>Message(56)</li>
+                <li>Accept(34)</li>
+                <li>Sent(23)</li>
+                <li>Delete(4)</li>
+            </ul>
+            }
+
+
             <div className="flex justify-between pt-3" onClick={() => setSort(!sort)}>
                 <span className="font-semibold">Sorting</span> <span><GrFormDown /></span>
             </div>

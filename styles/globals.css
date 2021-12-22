@@ -19,6 +19,15 @@ a {
   box-sizing: border-box;
 }
 
+/* ============custom style===================== */
 .avatar.online:before {
   top: 82%;
+}
+.collapse-title, .collapse>input[type=checkbox] {
+  display: flex;
+  align-items: center;
+}
+.indicator .indicator-item {
+  --tw-translate-x: 93%;
+  --tw-translate-y: -23%;
 }
