@@ -23,7 +23,7 @@ const Nav = () => {
                         </div>
 
                     </div>
-                    <div className="flex justify-center items-center gap-2 text-2xl text-gray-600">
+                    <div className="flex justify-center items-center gap-2 text-xl text-gray-600">
 
                         <div className="">
                             <MailFilled className='bg-gray-300 rounded-full p-2  cursor-pointer' />
