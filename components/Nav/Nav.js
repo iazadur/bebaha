@@ -7,11 +7,12 @@ const Nav = () => {
     return (
         <nav className=''>
             <div className="border border-b-gray-400 py-2">
-                <div className="container mx-auto flex justify-between">
+                <div className="container mx-auto flex justify-between ">
                     <div className="flex">
                         <Image src="/img/logo.png" width="132px" height="29px" alt='' />
                     </div>
-                    <div className="flex gap-x-2 justify-center items-center">
+                    <div className=" gap-x-2 justify-center items-center md:flex hidden">
+
                         <div className=" md:col-span-5 col-span-7 flex-wrap  flex gap-2">
                             <p className='rounded-2xl hover:bg-pink-700 hover:text-white font-medium px-3 py-1 cursor-pointer'>New Match (445)</p>
                             <p className="rounded-2xl hover:bg-pink-700 hover:text-white font-medium px-3 py-1 cursor-pointer">All (978)</p>
@@ -48,6 +49,19 @@ const Nav = () => {
                     </div>
                 </div>
             </div>
+
+            <div className=" gap-x-2 justify-center items-center md:hidden my-2 flex">
+
+                        <div className=" md:col-span-5 col-span-7 flex-wrap  flex ">
+                            <p className='rounded-2xl hover:bg-pink-700 hover:text-white font-medium px-3 py-1 cursor-pointer'>New Match (445)</p>
+                            <p className="rounded-xl hover:bg-pink-700 hover:text-white font-medium px-3 py-1 cursor-pointer">All (978)</p>
+
+                            <p className="rounded-xl hover:bg-pink-700 hover:text-white font-medium px-3 py-1 cursor-pointer">My Match (190</p>
+
+                            <p className="rounded-xl hover:bg-pink-700 hover:text-white font-medium px-3 py-1 cursor-pointer">Near Me (458)</p>
+                        </div>
+
+                    </div>
 
         </nav>
     );
