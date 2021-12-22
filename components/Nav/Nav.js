@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
-import { MdEmail } from 'react-icons/md'
+import { Avatar } from 'antd';
+import { BehanceSquareFilled, UserOutlined, GlobalOutlined, MailFilled } from '@ant-design/icons';
 
 const Nav = () => {
     return (
@@ -21,19 +22,20 @@ const Nav = () => {
                         </div>
 
                     </div>
-                    <div className="flex justify-center items-center gap-2">
-                        
+                    <div className="flex justify-center items-center gap-2 text-2xl text-gray-600">
+
                         <div className="">
-                            <MdEmail className='bg-gray-300 rounded-full p-2 text-4xl cursor-pointer' />
+                            <MailFilled className='bg-gray-300 rounded-full p-2  cursor-pointer' />
                         </div>
                         <div className="">
-                            <MdEmail className='bg-gray-300 rounded-full p-2 text-4xl cursor-pointer' />
+                            <GlobalOutlined className='bg-gray-300 rounded-full p-2  cursor-pointer' />
+                        </div>
+
+                        <div className="">
+                            <BehanceSquareFilled className='bg-gray-300 rounded-full p-2  cursor-pointer' />
                         </div>
                         <div className="">
-                            <MdEmail className='bg-gray-300 rounded-full p-2 text-4xl cursor-pointer' />
-                        </div>
-                        <div className="">
-                            <MdEmail className='bg-gray-300 rounded-full p-2 text-4xl cursor-pointer' />
+                          <UserOutlined  className='bg-gray-300 rounded-full p-2  cursor-pointer' />
                         </div>
                         {/* <div className="">
                         <button type="button" className="btn relative p-4">
