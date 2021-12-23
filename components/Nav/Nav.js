@@ -50,7 +50,7 @@ const Nav = () => {
                 </div>
             </div>
 
-            <div className=" gap-x-2 justify-center items-center md:hidden my-2 flex">
+            <div className=" gap-x-2 justify-center items-center md:hidden my-2 flex fixed top-12 py-1 z-40 bg-white shadow-lg left-0 right-0">
 
                         <div className=" md:col-span-5 col-span-7 flex-wrap  flex ">
                             <p className='rounded-2xl hover:bg-pink-700 hover:text-white font-medium px-3 py-1 cursor-pointer'>New Match (445)</p>

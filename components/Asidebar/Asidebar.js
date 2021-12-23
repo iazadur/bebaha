@@ -11,7 +11,7 @@ const Asidebar = () => {
     const [more, setMore] = useState(false)
     return (
         <>
-        <div className="overscroll-none">
+        <div className="fixed top-8">
             
         <div className="flex flex-col pt-12 text-red-400  font-bold">
                 {/* <AiFillHeart /> */}
@@ -51,7 +51,7 @@ const Asidebar = () => {
                 <label htmlFor="vehicle1" className='pl-5'>see more</label><br />
             </form>}
 
-            <div className="flex justify-between pt-3" onClick={() => setCat(!cat)}>
+            {/* <div className="flex justify-between pt-3" onClick={() => setCat(!cat)}>
                 <span className="font-semibold">All Categories</span> <span><GrFormDown /></span>
             </div>
 
@@ -76,78 +76,7 @@ const Asidebar = () => {
                     <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Agriculture</li>
                     <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Overseas Jobs</li>
                 </ul>
-            </div>}
-
-
-
-
-
-
-            <div className="flex justify-between pt-3" onClick={() => setCat(!cat)}>
-                <span className="font-semibold">All Categories</span> <span><GrFormDown /></span>
-            </div>
-
-            {cat && <div className="py-1">
-                <ul>
-                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Electronics</li>
-                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Mobiles</li>
-                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Home and Living
-                        <ul className='pl-8 list-disc'>
-                            <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Vehicles</li>
-                            <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Property</li>
-                            <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Pets & Animals</li>
-                            <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Fashion & Beauty</li>
-                            <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Hobbies, Sports & Kids</li>
-                        </ul>
-                    </li>
-                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Education</li>
-                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Essentials</li>
-                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Business & Industry</li>
-                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Jobs</li>
-                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Services</li>
-                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Agriculture</li>
-                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Overseas Jobs</li>
-                </ul>
-            </div>}
-
-            <div className="flex justify-between pt-3" onClick={() => setCat(!cat)}>
-                <span className="font-semibold">All Categories</span> <span><GrFormDown /></span>
-            </div>
-
-            {cat && <div className="py-1">
-                <ul>
-                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Electronics</li>
-                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Mobiles</li>
-                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Home and Living
-                        <ul className='pl-8 list-disc'>
-                            <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Vehicles</li>
-                            <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Property</li>
-                            <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Pets & Animals</li>
-                            <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Fashion & Beauty</li>
-                            <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Hobbies, Sports & Kids</li>
-                        </ul>
-                    </li>
-                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Education</li>
-                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Essentials</li>
-                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Business & Industry</li>
-                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Jobs</li>
-                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Services</li>
-                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Agriculture</li>
-                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Overseas Jobs</li>
-                </ul>
-            </div>}
-
-
-
-
-
-
-
-
-
-
-
-
+            </div>} */}
 
 
 
@@ -168,8 +97,9 @@ const Asidebar = () => {
                 <li>Promote</li>
                 <li onClick={() => setMore(!more)} className='font-medium'>More</li>
             </ul>
+
             {more && <>
-                <ul className='flex gap-x-8 gap-y-1 my-2 text-gray-400 font-normal flex-wrap text-sm'>
+                <ul className='flex gap-x-8 gap-y-1 my-2 text-gray-400 font-normal flex-wrap text-sm' style={{width:"200px"}}>
                     <li>App</li>
                     <li>Add to home Screen</li>
                     <li>Follow Facebook</li>

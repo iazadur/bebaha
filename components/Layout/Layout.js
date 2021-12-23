@@ -14,13 +14,13 @@ const Layout = ({ children }) => {
                     <div className="flex gap-x-12">
                         <div style={{ width: "200px" }} className="md:block hidden relative"><Asidebar /></div>
                         <div style={{ maxWidth: "500px" }} className="w-full"> <main>{children}</main> </div>
-                        <div style={{ width: "275px" }} className="md:block hidden"><RightSideBar /></div>
+                        <div style={{ width: "275px" }} className="md:block hidden relative"><RightSideBar /></div>
                     </div>
 
 
                 </div>
             </div>
-            <Footer />
+            
         </>
     );
 };
