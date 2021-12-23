@@ -14,7 +14,7 @@ const AddUser = () => {
                     <p className='text-gray-400'>{"22 yrs 5`8`` Dhaka Unmarred"}</p>
                 </div>
                 <div className="text-center">
-                    <button className='bg-pink-100 py-1 px-14 font-bold my-3 rounded-lg text-cyan-600 text-lg'>Say Hi</button>
+                    <button className='bg-blue-100 py-1 px-14 font-bold my-3 rounded-lg text-cyan-600 text-lg'>Say Hi</button>
                 </div>
                 <CloseOutlined className='absolute right-4 top-4 font-extrabold text-white p-2 rounded-full p-e bg-slate-500' />
             </div>

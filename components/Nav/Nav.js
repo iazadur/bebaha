@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import { Avatar } from 'antd';
-import { BehanceSquareFilled, UserOutlined, GlobalOutlined, MailFilled } from '@ant-design/icons';
+import { BehanceSquareFilled, UserOutlined, GlobalOutlined, CrownFilled } from '@ant-design/icons';
 
 const Nav = () => {
     return (
@@ -26,7 +26,7 @@ const Nav = () => {
                     <div className="flex justify-center items-center gap-2 text-xl text-gray-600">
 
                         <div className="">
-                            <MailFilled className='bg-gray-300 rounded-full p-2  cursor-pointer' />
+                            <CrownFilled className='bg-gray-300 rounded-full p-2  cursor-pointer' />
                         </div>
                         <div className="">
                             <GlobalOutlined className='bg-gray-300 rounded-full p-2  cursor-pointer' />
