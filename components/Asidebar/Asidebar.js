@@ -11,7 +11,7 @@ const Asidebar = () => {
     const [more, setMore] = useState(false)
     return (
         <>
-        <div className="fixed top-8">
+        <div className="fixed top-8 w-52">
             
         <div className="flex flex-col pt-12 text-red-400  font-bold">
                 {/* <AiFillHeart /> */}

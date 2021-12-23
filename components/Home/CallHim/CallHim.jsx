@@ -6,7 +6,7 @@ const CallHim = () => {
 
         <div className='relative mb-28'>
             <div className="flex justify-between items-center text-sm font-normal px-3 my-2">
-                <div className=""><span>You Like this Profile</span></div>
+                <div className=""><span className='flex items-center gap-x-2'><Image src="/img/invite.png" alt="" width="16" height={"16"} />You Like this Profile</span></div>
 
             </div>
             <div className="">

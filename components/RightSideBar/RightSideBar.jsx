@@ -6,7 +6,7 @@ const RightSideBar = () => {
         <>
             <div className="fixed top-18">
                 <div className="pt-2">
-                    <Image src="/img/skrill.jpg" alt="" width="275" height={"275"} />
+                    <Image src="/img/Skrill.jpg" alt="" width="275" height={"275"} />
                 </div>
                 <div className="my-2">
                     <h3 className='text-lg text-gray-500 font-semibold'> Chat or Send Message</h3>
