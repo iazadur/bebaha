@@ -7,10 +7,10 @@ const AddUser = () => {
         <>
             <div className="flex flex-col w-60 relative">
                 <div className="">
-                    <Image className='rounded-3xl' src="/img/azad.jpg" alt="" height={"300"} width={"240"}/>
+                    <Image className='rounded-3xl' src="/img/azad.jpg" alt="" height={"305"} width={"255"}/>
                 </div>
                 <div className="text-center">
-                    <h4 className='text-lg font-semibold '>{"Md Azadur Rahman"}</h4>
+                    <h4 className='text-lg font-semibold text-gray-500'>{"Md Azadur Rahman"}</h4>
                     <p className='text-gray-400'>{"22 yrs 5`8`` Dhaka Unmarred"}</p>
                 </div>
                 <div className="text-center">
