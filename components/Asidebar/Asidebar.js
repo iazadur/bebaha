@@ -11,7 +11,9 @@ const Asidebar = () => {
     const [more, setMore] = useState(false)
     return (
         <>
-            <div className="flex flex-col pt-12 text-red-400  font-bold">
+        <div className="overscroll-none">
+            
+        <div className="flex flex-col pt-12 text-red-400  font-bold">
                 {/* <AiFillHeart /> */}
                 <Link href="#">❤️ Premium Product</Link>
                 <Link href='/'>❤️ For You</Link>
@@ -76,6 +78,79 @@ const Asidebar = () => {
                 </ul>
             </div>}
 
+
+
+
+
+
+            <div className="flex justify-between pt-3" onClick={() => setCat(!cat)}>
+                <span className="font-semibold">All Categories</span> <span><GrFormDown /></span>
+            </div>
+
+            {cat && <div className="py-1">
+                <ul>
+                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Electronics</li>
+                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Mobiles</li>
+                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Home and Living
+                        <ul className='pl-8 list-disc'>
+                            <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Vehicles</li>
+                            <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Property</li>
+                            <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Pets & Animals</li>
+                            <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Fashion & Beauty</li>
+                            <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Hobbies, Sports & Kids</li>
+                        </ul>
+                    </li>
+                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Education</li>
+                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Essentials</li>
+                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Business & Industry</li>
+                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Jobs</li>
+                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Services</li>
+                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Agriculture</li>
+                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Overseas Jobs</li>
+                </ul>
+            </div>}
+
+            <div className="flex justify-between pt-3" onClick={() => setCat(!cat)}>
+                <span className="font-semibold">All Categories</span> <span><GrFormDown /></span>
+            </div>
+
+            {cat && <div className="py-1">
+                <ul>
+                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Electronics</li>
+                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Mobiles</li>
+                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Home and Living
+                        <ul className='pl-8 list-disc'>
+                            <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Vehicles</li>
+                            <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Property</li>
+                            <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Pets & Animals</li>
+                            <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Fashion & Beauty</li>
+                            <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Hobbies, Sports & Kids</li>
+                        </ul>
+                    </li>
+                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Education</li>
+                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Essentials</li>
+                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Business & Industry</li>
+                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Jobs</li>
+                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Services</li>
+                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Agriculture</li>
+                    <li className=' text-sky-500 hover:text-indigo-500  font-medium cursor-pointer'>Overseas Jobs</li>
+                </ul>
+            </div>}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             {/* Location  */}
             <div className="flex justify-between pt-3" onClick={() => setLocation(!location)}>
                 <span className="font-semibold">Location</span> <span><GrFormDown /></span>
@@ -106,6 +181,8 @@ const Asidebar = () => {
                     <li>About Us</li>
                 </ul>
             </>}
+        
+        </div>
         </>
     );
 };

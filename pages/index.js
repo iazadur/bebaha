@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import AddUsers from '../components/Home/AddUser/AddUsers'
 import Invitations from '../components/Home/Invitations/Invitations'
 import Preference from '../components/Home/Preference/Preference'
 import Users from '../components/Home/Users/Users'
@@ -16,6 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <AddUsers />
       <Invitations />
       <Preference />
       <Users />

@@ -5,9 +5,9 @@ import { BehanceSquareFilled, UserOutlined, GlobalOutlined, MailFilled } from '@
 
 const Nav = () => {
     return (
-        <nav className=''>
-            <div className="border border-b-gray-400 py-2">
-                <div className="container mx-auto flex justify-between ">
+        <nav className='relative'>
+            <div className="border border-b-gray-300 py-2 fixed top-0 left-0 right-0 bg-white z-40">
+                <div className="container mx-auto flex justify-between">
                     <div className="flex">
                         <Image src="/img/logo.png" width="132px" height="29px" alt='' />
                     </div>
