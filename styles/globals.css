@@ -19,6 +19,15 @@ a {
   box-sizing: border-box;
 }
 
+/* ============================== */
+
+.w34{
+width: 445px;
+}
+.h34{
+width: 550px;
+}
+
 /* ============custom style===================== */
 .avatar.online:before {
   top: 82%;

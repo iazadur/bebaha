@@ -10,7 +10,7 @@ const Users = () => {
                     
                 </div>
 
-                <div className="md:px-4 mx-auto">
+                <div className="md:px-4 ">
 
                     {Array.from({ length: 1 }).map((_, idx) => (<User key={idx} />))}
                 </div>

@@ -4,7 +4,8 @@ import { ArrowDownOutlined, CheckOutlined, MessageOutlined, MailOutlined, PhoneO
 
 const User = () => {
     return (
-        <div className='bg-cover bg-center w-full rounded-3xl relative' style={{ backgroundImage: `url("/img/azad.jpg")`, height: "550px", width: "445px" }}>
+        // <div className='bg-cover bg-center w-full rounded-3xl relative' style={{ backgroundImage: `url("/img/azad.jpg")`, height: "550px", width: "445px" , backgroundSize: "cover", backgroundPosition: "center" }}>
+        <div className='bg-cover bg-center rounded-3xl relative mx-2' style={{ backgroundImage: `url("/img/azad.jpg")`, height: "550px", width: "auto", backgroundSize: "cover", backgroundPosition: "center", maxHeight: "550px", maxWidth: "445px", }}>
             <div className="top-80 absolute bg-gradient-to-b from-transparent to-gray-600 w-full pb-3 rounded-b-3xl" style={{}}>
                 <div className="text-white mx-4">
                     <h3 className='leading-none font text-white font-semibold text-2xl '>Md Azadur Rahman</h3>
