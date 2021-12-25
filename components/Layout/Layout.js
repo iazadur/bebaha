@@ -1,6 +1,5 @@
 import React from 'react';
 import Asidebar from '../Asidebar/Asidebar';
-import Footer from '../Footer/Footer';
 import Nav from '../Nav/Nav';
 import 'antd/dist/antd.css';
 import RightSideBar from '../RightSideBar/RightSideBar';
@@ -19,12 +18,11 @@ const Layout = ({ children }) => {
                     </div>
                 </div>
             </div>
-            <div className="container mx-auto">
+            
                 <div className="fixed bottom-0 left-0">
                     <Image className='' width="80" src="/img/top.png" height="50" alt="" />
                 </div>
-            </div>
-            <Footer />
+           
         </>
     );
 };
