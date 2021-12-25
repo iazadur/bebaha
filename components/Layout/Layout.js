@@ -4,6 +4,7 @@ import Footer from '../Footer/Footer';
 import Nav from '../Nav/Nav';
 import 'antd/dist/antd.css';
 import RightSideBar from '../RightSideBar/RightSideBar';
+import Image from 'next/image';
 
 const Layout = ({ children }) => {
     return (
@@ -16,8 +17,11 @@ const Layout = ({ children }) => {
                         <div style={{ maxWidth: "500px" }} className="w-full"> <main>{children}</main> </div>
                         <div style={{ width: "275px" }} className="md:block hidden relative"><RightSideBar /></div>
                     </div>
-
-
+                </div>
+            </div>
+            <div className="container mx-auto">
+                <div className="fixed bottom-0 left-0">
+                    <Image className='' width="80" src="/img/top.png" height="50" alt="" />
                 </div>
             </div>
             <Footer />
