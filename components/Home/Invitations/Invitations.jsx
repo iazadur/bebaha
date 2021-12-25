@@ -14,7 +14,7 @@ const Invitations = () => {
                     <span className="text-indigo-500 cursor-pointer">View All</span>
                 </div>
             </div>
-            <div className="grid md:grid-cols-2 gap-2 grid-cols-1 gap-y-4 ">
+            <div className="md:grid md:grid-cols-2 gap-2 flex flex-col items-center justify-center gap-y-8 sm:mx-0 mx-4 ">
                 {Array.from({ length: 2 }).map((_, idx) => (<Invitation key={idx} />))}
             </div>
         </>

@@ -10,8 +10,8 @@ import { AiOutlineCheck, AiOutlineClose } from 'react-icons/ai';
 const Invitation = () => {
     return (
         <>
-            <div className="shadow-lg bg-white rounded-xl w-60" >
-                <Image src="/img/azad.jpg" width="240" height="240" className=' rounded-t-xl' alt='' />
+            <div className="shadow-lg bg-white rounded-xl sm:w-60 w-full" >
+                <Image src="/img/azad.jpg" width="240" height="240" layout='responsive' className=' rounded-t-xl' alt='' />
                 <div className="my-1">
                     <h4 className='font-semibold text-lg text-center text-gray-500 flex justify-center gap-x-2'>Md Azadur <span><MdOutlineVerified/></span></h4>
                     <p className='font-semibold text-sm text-center text-gray-400'>{"22 yr's, 5`7``, Dhaka, Unmmared"}</p>
